@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            background: #F5F7F9;
+            color: #242A31;
+            font-family: Roboto, sans-serif;
+            line-height: 1em;
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            display: block;
+        }
+
+        #root {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #header {
+            width: 100%;
+            height: 100px;
+            background: aqua;
+            /* flex: auto; */
+        }
+
+        .below {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav {
+            /* display: inline-block; */
+            /* width: 280px; */
+            width: 30%;
+            /* height: 632px; */
+            background: lime;
+            /* flex: 1; */
+
+        }
+
+        .content {
+
+            background: cornflowerblue;
+            flex: auto;
+
+        }
+
+        .footer {}
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div id="header">
+            header<br>            
+            width: 100%;<br>
+            height: 100px;<br>
+            建立了flex:1 的隐藏父容器below
+
+        </div>
+        <div class="below">
+                <!-- flex: 1;<br>
+                display: flex;<br>
+                flex-direction: row;<br> -->
+            <div class="nav">
+                nav<br>
+                width: 30%;<br>
+
+
+            </div>
+            <div class="content">
+                content<br>
+                flex: auto;<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+                content<br>
+            </div>
+        </div>
+
+        <!-- <div class="footer">
+            footer
+        </div> -->
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

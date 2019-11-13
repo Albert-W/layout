@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>水平居中布局的第二种解决方案</title>
+    <style>
+        #parent {
+            width: 100%;
+            height: 200px;
+            background: #ccc;
+
+        }
+
+        #child{
+            width: 200px;
+            height: 200px;
+            background: #c9394a;
+
+            /* 
+            block, table 都可以
+             */
+            display: table;
+            /* 
+            margin属性： 外边距
+            一： 上右下左
+            二： 上下， 左右
+                * auto 表示根据浏览器自动分配
+            三： 上， 左右， 下
+            四： 上，右，下，左
+             */
+            margin: 0 auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            居中布局
+        </div>
+    </div>
+</body>
+</html>

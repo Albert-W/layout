@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>水平居中布局的第一种解决方案</title>
+    <style>
+        #parent {
+            width: 100%;
+            height: 200px;
+            background: #ccc;
+            
+            position: relative;
+        }
+
+        #child{
+            width: 200px;
+            height: 200px;
+            background: #c9394a;
+            /* 
+                把当前元素设置为绝对定位之后，两种情况
+                1，父级没有开启定位，当前元素相对于页面定位。
+                2，父级开启了定位，当前元素相对于父级元素定位。
+             */
+            position: absolute;
+            left: 50%;
+            /* 向左移动50%的 width */
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            居中布局
+        </div>
+    </div>
+</body>
+</html>

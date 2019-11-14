@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多列布局</title>
+    <style>
+        .parent ,.parent2{
+            /* column-count: 4;
+            column-width: 300px; */
+            columns: 4 300px;
+            column-gap: 20px;
+            /* column-rule-width: 5px;
+            column-rule-color: red;
+            column-rule-style: dotted; */
+            column-rule: 5px tomato double;
+        }
+        .col1, .col2,.col3, .col4, .col5{
+            height: 300px;
+        }        
+        .col1, .col6{
+            background-color: hotpink;
+        }
+        .col2, .col7{
+            background-color: lightblue;
+        }
+        .col3, .col8{
+            background-color: green;
+        }
+        .col4, .col9{
+            background-color: yellow;
+        } 
+        .col5{
+            background-color: tomato;
+            column-span: all;
+        }
+
+        .col6, .col7, .col8, .col9{
+            column-fill: balance;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <!-- hello -->
+        <div class="col1">
+            <!-- <p>1</p> -->
+        </div>
+        <div class="col2">
+            <!-- <p>2</p> -->
+        </div>
+        <div class="col3">
+            <!-- <p>3</p> -->
+        </div>
+        <div class="col4">
+            <!-- <p>4</p> -->
+        </div>
+
+    </div>
+
+    <div class="parent2">
+        <div class="col5">
+                <!-- <p>4</p> -->
+        </div>
+    </div>
+
+    <div class="parent">
+        <div class="col6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa illum, eum fugiat amet pariatur a aut sit, consectetur, aspernatur ipsum animi iste. Officia sapiente beatae magnam natus et dolores ipsa.</div>
+        <div class="col7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae laborum deserunt possimus non odit sit, voluptatibus, labore facere explicabo quae, voluptatum at itaque quidem doloremque? Consectetur molestias itaque dolorem quasi!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil aut inventore, recusandae qui laboriosam hic blanditiis quaerat accusantium totam ducimus tempore, dicta modi molestiae magni enim. Cupiditate est harum hic.
+        </div>
+        <div class="col8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aut recusandae, repellat ea, eos laudantium repudiandae dicta autem cumque voluptatem suscipit reiciendis tempora quam. Dolore blanditiis accusamus distinctio quo soluta.</div>
+        <div class="col9">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci provident temporibus facere ipsam, ut recusandae commodi repellendus iure officiis illum nam. Laborum nostrum repellat quos ipsum necessitatibus laboriosam, ex itaque.</div>
+    
+    /div>
+</body>
+</html>
